@@ -1,0 +1,359 @@
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: underline;
+    color: inherit;
+}
+
+a:hover {
+    color: #4d4d4d;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #fbfbfb;
+    font-family: 'Droid Serif', serif;
+    color: #7e7e7e;
+    line-height: 1.4em;
+}
+
+.cover {
+  /* Set rules to fill background */
+
+min-width: 1024px;
+
+/* Set up proportionate scaling */
+width: 100%;
+height: auto;
+
+/* Set up positioning */
+top: 0;
+left: 0;
+}
+
+#intro, #bgvid {
+    height: 100vh;
+}
+
+.design {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    background: #000;
+    opacity: .5
+}
+
+
+.expand {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
+
+.buttonIntro {
+    text-transform: uppercase;
+    margin: .5em;
+    background: #83a3ff;
+    font-family: 'Roboto Slab', serif;
+    color: #3d477e;
+    font-size: 2em;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 0 6px #3d477e;
+    padding: .5em 1em;
+    position: relative;
+    top: 0;
+    transition: top .1s ease, box-shadow .1s ease;
+    -moz-transition: top .1s ease, box-shadow .1s ease;
+    -webkit-transition: top .1s ease, box-shadow .1s ease;
+    -o-transition: top .1s ease, box-shadow .1s ease;
+}
+
+.title {
+    font-size: 2em;
+    flex: 1 100%;
+    display: flex;
+    line-height: 40pt;
+    display: inline-block
+}
+
+.first-title {
+    font-size: 3em;
+    color: #fff;
+}
+
+.description {
+    list-style: none;
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 21pt;
+    margin-top: 1em;
+}
+
+h1 {
+    font-size: 1.5em;
+    line-height: 23pt;
+}
+
+h2 {
+    font-size: 1em;
+    padding-top: .3em;
+}
+
+p {
+    padding: .5em 0;
+    color: #4d4d4d;
+}
+
+.darkH1 {
+    color: #d8d8d8
+}
+
+.darkH2 {
+    color: #9e9e9e;
+}
+
+.darkP {
+    color: #f2f2f2;
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #fff;
+}
+
+.img-opacity {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    opacity: 1;
+    transition: opacity .3s ease;
+    -moz-transition: opacity .3s ease;
+    -webkit-transition: opacity .3s ease;
+    -o-transition: opacity .3s ease;
+    border: 5px solid #fff;
+}
+
+.img-opacity:hover {
+    opacity: .7;
+    transition: opacity .3s ease;
+    -moz-transition: opacity .3s ease;
+    -webkit-transition: opacity .3s ease;
+    -o-transition: opacity .3s ease
+}
+
+.wrapper {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 1500px) {
+    .wrapper {
+        width: 80%
+    }
+}
+
+.header,
+.main,
+.nav,
+.aside,
+.footer {
+    flex: 1 100%;
+    display: flex;
+}
+
+nav {
+    background: #eee;
+    border-bottom: 1px solid #dedede;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 1em
+}
+
+.pageLight {
+    background: #f2f2f2;
+    padding: 2em;
+}
+
+.pageDark {
+    background: #333333;
+    padding: 2em;
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    flex: 8;
+    justify-content: flex-start;
+    margin: auto;
+    padding-left: 1.5em
+}
+
+.navigation > li:target {
+    background-color: red
+}
+
+.navigationMobile {
+    flex: 1 100%;
+    list-style: none;
+    margin: auto;
+    text-align: center;
+    background: #83a3ff;
+}
+
+.navigationMobile a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navigationMobile li {
+    padding: 1em 0;
+}
+
+.navigationMobile li:hover,
+.navigationMobile li:active {
+    background: #3d477e
+}
+
+.navigation a {
+    text-decoration: none;
+    padding: 1em .6em;
+    margin: 0;
+    color: #bcbcbc;
+    font-weight: bold;
+    transition: color .5s ease;
+    -moz-transition: color .5s ease;
+    -webkit-transition: color .5s ease;
+    -o-transition: color .5s ease;
+}
+
+.navigation a:hover {
+    color: #4d4d4d;
+}
+
+.emailButton {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    width: 50%;
+}
+
+.email,
+.menu {
+    margin: .5em;
+    background: #83a3ff;
+    font-weight: bold;
+    color: #3d477e;
+    font-size: 2em;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 0 6px #3d477e;
+    padding: 5px 10px;
+    position: relative;
+    top: 0;
+    transition: top .1s ease, box-shadow .1s ease;
+    -moz-transition: top .1s ease, box-shadow .1s ease;
+    -webkit-transition: top .1s ease, box-shadow .1s ease;
+    -o-transition: box-shadow .5s ease;
+}
+
+.email:hover,
+.menu:hover {
+    top: 2px;
+    box-shadow: 0 3px #3d477e;
+}
+
+.box {
+    flex: 1;
+    min-width: 50%;
+    min-height: 100px;
+    padding: 20px
+}
+
+.box2 {
+    flex: 4;
+    min-width: 25%;
+    min-height: 100px;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    margin: 0 0 4em 0
+}
+
+@media (max-width: 1000px) {
+    .box2 {
+        flex: 1;
+        min-width: 50%
+    }
+}
+
+.center {
+    text-align: center;
+}
+
+.mobileMenu {
+    flex: 0 100%;
+}
+
+@media (max-width: 700px) and (min-width: 600px) {
+    .navigation a {
+        font-size: .8em
+    }
+}
+
+@media (max-width: 600px) {
+    .box {
+        flex: 1 100%;
+    }
+    .navigation {
+        display: none;
+    }
+}
+
+@media (min-width: 600px) {
+    .mobileMenu,
+    .menu {
+        display: none;
+    }
+}
+
+#uberbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: auto;
+}

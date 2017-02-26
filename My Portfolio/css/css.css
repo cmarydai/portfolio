@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: #f2f2f2;
+    font-family: 'Roboto Slab', serif;
+    color: #7e7e7e;
+    line-height: 1.5em;
+}
+h1 {
+    font-size: 1.5em;
+}
+h2 {
+    font-size: 1em;
+    padding-top: .5em;
+}
+p {
+    padding: .5em 0;
+    color: #4d4d4d;
+}
+.wrapper {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.header,
+.main,
+.nav,
+.aside,
+.footer {
+    flex: 1 100%;
+    display: flex;
+}
+nav {
+    background: #fff;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 1em
+}
+.navigation {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex: 5;
+    justify-content: flex-start;
+    margin: auto
+}
+.navigation a {
+    text-decoration: none;
+    padding: 1em;
+    margin: 0;
+    color: #bcbcbc;
+    font-weight: bold;
+    transition: color .5s ease;
+    -moz-transition: color .5s ease;
+    -webkit-transition: color .5s ease;
+    -o-transition: color .5s ease;
+}
+.navigation a:hover {
+    color: #4d4d4d;
+}
+.emailButton {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+.email, .menu {
+    margin: .5em;
+    background: #83a3ff;
+    font-weight: bold;
+    color: #3d477e;
+    font-size: 2em;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 0 6px #3d477e;
+    padding: 5px 10px;
+    position: relative;
+    top: 0;
+    transition: top .1s ease, box-shadow .1s ease;
+    -moz-transition: top .1s ease, box-shadow .1s ease;
+    -webkit-transition: top .1s ease, box-shadow .1s ease;
+    -o-transition: top .1s ease, box-shadow .1s ease;
+}
+.email:hover, .menu:hover {
+    top: 2px;
+    box-shadow: 0 3px #3d477e;
+}
+.box {
+    flex: 1;
+    min-width: 50%;
+    min-height: 100px;
+    padding: 20px
+}
+@media (max-width: 650px) {
+    .box {
+        flex: 1 100%;
+    }
+    .navigation {
+        display: none;
+    }
+}
+@media (min-width: 650px) {
+    .menuButton {
+        display: none;
+    }
+}
